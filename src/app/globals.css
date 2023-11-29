@@ -8,20 +8,23 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white
+}
+@layer components {
+  .link {
+    @apply text-sm font-semibold leading-6 text-gray-900 transition ease-in-out hover:border-b-2
+    hover:border-b-black;
+  }
+  .submenu {
+    @apply text-sm font-light leading-6 text-gray-900 transition ease-in-out hover:bg-indigo-400 hover:text-white  px-3  }
 }
