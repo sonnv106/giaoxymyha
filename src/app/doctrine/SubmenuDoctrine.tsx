@@ -1,32 +1,27 @@
 import Link from "next/link"
 
 
-const SubmenuNews = () =>{
+const SubmenuDoctrine = () =>{
     return (
         <div className="absolute hidden py-6 group-hover:block transition-all duration-1000 w-full">
-              <ul className=" shadow-lg w-44 bg-white">
+              <ul className=" shadow-lg w-40 bg-white">
                 <li>
                   <Link href="#" className="submenu font-light block w-full">
-                    Tin giáo hội toàn cầu
+                    Bài học giáo lý
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="submenu font-light block w-full">
-                    Tin giáo hội Việt Nam
+                    Tranh tô màu
                   </Link>
                 </li>
                 <li>
                   <Link href="#" className="submenu font-light block w-full">
-                    Tin giáo phận
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="submenu font-light block w-full">
-                    Tin giáo xứ
+                    Trò chơi ô chữ
                   </Link>
                 </li>
               </ul>
             </div>
     )
 }
-export default SubmenuNews
+export default SubmenuDoctrine

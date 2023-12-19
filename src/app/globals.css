@@ -26,5 +26,5 @@ body {
     hover:border-b-black;
   }
   .submenu {
-    @apply text-sm font-light leading-6 text-gray-900 transition ease-in-out hover:bg-indigo-400 hover:text-white  px-3  }
+    @apply text-sm font-light leading-6 text-gray-900 transition ease-in-out hover:bg-indigo-400 hover:text-white  px-3 py-1  }
 }
